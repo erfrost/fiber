@@ -1,0 +1,44 @@
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mobileMenu-button {
+    color: #838383 !important;
+    border-radius: 10px !important;
+    min-width: 40px !important;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: white !important;
+    transition: all 0.2s;
+}
+.mobileMenu-button:hover {
+    color: #FF8F52 !important;
+    background-color: #f8f8f8 !important;;
+}
+.button {
+    color: #838383 !important;
+    border-radius: 10px !important;
+    width: 75px;
+    text-transform: none !important;
+}
+.button:hover {
+    color: #FF8F52 !important;
+    background-color: #f8f8f8 !important;;
+}
+@media screen and (max-width: 840px) {
+    .button-group {
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .button-group {
+        margin-left: auto;
+        margin-right: auto;
+        gap: 10px;
+    }
+}

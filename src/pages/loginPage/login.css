@@ -1,0 +1,191 @@
+.login-body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+.login-box {
+    width: 70%;
+    height: 650px;
+    background-color: white;
+    border-radius: 10px;
+}
+.login-columns {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.column-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+}
+.column-right {
+    width: 50%;
+}
+.image {
+    width: 100%;
+    height: 650px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    object-fit: cover;
+}
+.texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+}
+.texts-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+.text-login {
+    font-size: 32px;
+    font-weight: 600;
+}
+.text-login-2 {
+    font-size: 18px;
+    color: #838383;
+}
+.left-block-1-second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.link-toHome {
+    color: #838383 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.link-toHome:hover {
+    color: black !important;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.textField {
+    width: 100%;
+}
+.textField div::before {
+    border-bottom: none !important;
+}
+.textField div {
+    background-color: rgb(249, 249, 249) !important;
+    border-radius: 10px !important;
+    transition: none !important;
+}
+.textField label {
+    cursor: text !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+.textField div input {
+    border-radius: 10px !important;
+    background-color: rgb(249, 249, 249) !important;
+}
+.textField div div fieldset {
+    border-color: white !important;
+    border: none !important;
+}
+.rememberMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -12px;
+    max-width: 100%;
+}
+.rememberMe span {
+    color: #FF8F52;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+    color: #FF8F52 !important;
+}
+.text-checkbox {
+    color: #838383;
+}
+.button-login {
+    background-color: #FF8F52 !important;
+    height: 57px;
+    font-size: 20px !important;
+    letter-spacing: 0.5px !important;
+    text-transform: none !important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+}
+.button-login:hover {
+    background-color: #fd6d1f !important;
+}
+.isHaveAccount {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 10px;
+    color: #838383;
+}
+.link {
+    color: #FF8F52 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.link:hover {
+    color: #fd6d1f!important;
+}
+
+@media screen and (max-width:928px) {
+    .column-right {
+        display: none;
+    }
+    .column-left {
+        width: 100%;
+    }
+    .texts {
+        gap: 10px;
+    }
+}
+@media screen and (max-width:543px) {
+    .text-login {
+        font-size: 26px;
+    }
+    .text-login-2 {
+        font-size: 13px !important;
+        max-width: 150px;
+    }
+    .link-toHome {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width:450px) {
+    .login-box {
+        width: 85%;
+    }
+    .left-block-1-second {
+        display: none;
+    }
+    .text-login {
+        font-size: 34px;
+    }
+    .text-login-2 {
+        font-size: 17px !important;
+    }
+}
